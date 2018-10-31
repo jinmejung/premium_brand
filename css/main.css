@@ -1,0 +1,197 @@
+/* reset */
+        body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+        body,h1,h2,h3,h4,h5,h6 {font-size:12px;}
+        a {text-decoration:none; color:#333;}
+        img,fieldset {border:none;}
+        ul,ol,li {list-style:none;}
+        strong,em,address {font-style:normal; font-weight:normal;}
+        table {border-collapse:collapse;} 
+       @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+       
+        .swiper-button-prev {
+            left: 20px;
+                top: 40%;
+        }
+
+        .swiper-button-next {
+            right: 0;
+                top: 40%;
+        }
+       .img-blur{
+            animation:imageBlur 1.5s both;
+        }
+        @keyframes imageBlur{
+            0% {opacity:0; transform:translateY(60px); }
+            100% {opacity:1; transform:translateY(0); }
+        }
+        
+       .clearFix:after{
+            content:"";
+            clear:both;
+            display: block;
+        }
+        .fl{
+            float:left;
+        }
+        .fr{
+            float:right;
+        }
+            .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+        #premiumWrap{
+            width:100%;
+            height:100%;
+            font-family: 'Noto Sans KR', 'nanumgothic', sans-serif;
+            position: relative;
+            overflow: hidden;
+            background-color:#e4e4e4;
+                min-width:1100px;
+        }
+        /* main visual */
+        .main_visual{
+            background:url(http://timemecca.img13.kr/design/kr/premium_brand/premium_main_visual.jpg) no-repeat center center;
+            background-size:cover;
+            height:610px;
+            position: relative;
+        }
+        .main_visual .main_txt{
+            position:absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left:15%;
+            width:30%;
+        }
+        .main_visual .main_txt img{
+            width:100%;
+        }
+        /* section wrap */
+        .section_wrap{
+            width:95%;
+            margin:0 auto;
+            position:relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .sub_wrap{
+            width:100%;
+            position:relative;
+            box-sizing: border-box;
+        }
+        .sub_wrap .contents_box{
+            width:100%;
+            position:relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .contents_box > div{
+            box-sizing: border-box;
+        }
+        .contents_box .img_box{
+            width:75%;
+            position: relative;
+        }
+        .contents_box .img_box img{
+            width:100%;
+        }
+        
+        
+        .contents_box .img_box .img_txt{
+            position: absolute;
+            width:23%;
+            right:11%;
+            font-family:'Noto Sans KR', 'nanumgothic', sans-serif;
+            color:#111;
+            text-align: left;
+        }
+        .tagheuer .contents_box .img_box .img_txt{
+            top:17%;
+        }
+        .frederique .contents_box .img_box .img_txt{
+            top:23%;
+        }
+        .mido .contents_box .img_box .img_txt{
+            top:45%;
+            width:18%;
+        }
+        .hamilton .contents_box .img_box .img_txt{
+            top:19%;
+            width:20%
+        }
+        
+        .contents_box .img_box .img_txt h2{
+            font-family:'Noto Sans KR', 'nanumgothic', sans-serif;
+            font-size:.9vw;
+            font-weight:400;
+            letter-spacing: -0.5px;
+            color:#111;
+            margin-bottom:8%;
+        }
+        .contents_box .img_box .img_txt h2 span{
+            font-weight:600;
+            font-size:1.3vw;
+        }
+        .contents_box .img_box .img_txt p{
+            font-size:.88vw;
+            -webkit-text-size-adjust;
+            font-weight:300;
+            letter-spacing: :-0.5px;
+            line-height: 160%;
+        }
+        .contents_box .img_box .img_txt p span{
+            font-weight:600;
+        }
+        
+        
+        .contents_box .txt_box{
+            width:25%;
+            position: absolute;
+            top:40%;
+            transform: translateY(-50%);
+        }
+        .contents_box .txt_box.fr{
+            right:0;
+        }
+        .contents_box .txt_box.fl{
+            left:0;
+        }
+        .contents_box .txt_box .con_num{
+            text-align: center;
+        }
+        .contents_box .txt_box .con_num img{
+            width:25%;
+        }
+        .contents_box .txt_box a{
+            display: block;
+            border:1px solid #444;
+            text-align: center;
+            padding:10px;
+            width:140px;
+            margin:40px auto;
+            font-size:16px;
+            transition:all .4s ease;
+            font-weight:400;
+        }
+        .contents_box .txt_box a:hover{
+            background-color:#444;
+            color:#e4e4e4;
+        }
